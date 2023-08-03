@@ -1,10 +1,12 @@
 {% extends 'movie_app/base.html' %}
 
 
-{%block title%} Все фильмы {%endblock%}
+{% block title %}
+    Все фильмы
+{% endblock %}
 
 
-{%block content%}
+{% block content %}
     Список всех фильмов
     <ul>
         {%for movie in movies%}
@@ -15,4 +17,4 @@
             </li>
         {%endfor%}
     </ul>
-{%endblock%}
+{% endblock %}

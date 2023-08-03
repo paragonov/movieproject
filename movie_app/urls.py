@@ -1,9 +1,8 @@
 from django.urls import path
-from . import views
 
+from movie_app.views import show_all_movie, show_one_movie
 
-"""Конфигурация URLов приложение(movie_app)"""
 urlpatterns = [
-    path('', views.show_all_movie),
-    path('movie/<slug:slug_movie>', views.show_one_movie, name='movie-detail'),
+    path("", show_all_movie),
+    path("movie/<slug:slug_movie>", show_one_movie, name="movie-detail"),
 ]
